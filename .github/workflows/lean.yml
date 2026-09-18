@@ -18,6 +18,9 @@ jobs:
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
+      - name: Resolve dependencies
+        run: lake update
+
       - name: Lake exe cache get
         run: lake exe cache get
 
