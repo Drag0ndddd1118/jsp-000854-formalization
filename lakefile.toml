@@ -1,0 +1,20 @@
+name = "jsp-000854-formalization"
+version = "0.1.0"
+defaultTargets = ["Submission"]
+
+[[lean_lib]]
+name = "ErdosProblems"
+
+[[lean_lib]]
+name = "Erdos1027"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Submission"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.34.0"
